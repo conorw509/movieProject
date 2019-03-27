@@ -2,7 +2,8 @@ package com.advancedprojproject;
 
 import javax.validation.constraints.*;
 
-public class PersonForm {
+public class User {
+
 
     private int id;
     @NotEmpty(message = "Name cannot Be empty")
