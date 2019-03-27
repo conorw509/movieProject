@@ -11,8 +11,9 @@ public class PersonForm {
     @NotEmpty(message = "Last Name cannot Be empty")
     @Size(min = 3, max = 20, message = "Last Name must be between 3 and 20 characters")
     private String lastname;
-    @Email(message = "Please Enter a Valid Email")
+    @Email(message = "Email should be valid")
     private String email;
+    @NotEmpty(message = "Password cannot Be empty")
     @Size(min = 8, max = 15, message = "Password must be between 8 and 15 characters")
     @Pattern(regexp = "(.*[A-Z].*)",message = "Password must contain at Least 1 uppercase Letter")
     @Pattern(regexp = "(.*[a-z].*)",message = "Password must contain at Least 1 lowercase Letter")
