@@ -73,28 +73,28 @@
 
 <form action="#" th:action="@{/}" th:object="${personForm}" method="post">
     <tr><h2> Name</h2>
-        <input type="text" placeholder="Enter Name" name="Name" th:field="*{name}"/>
+        <input type="text" placeholder="Enter Name" name="name" th:field="*{name}"/>
         <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
     </tr>
     <tr>
         <h2>Last Name:</h2>
-        <td><input type="text" placeholder="Enter Last Name" th:field="*{lastname}"/></td>
+        <td><input type="text" placeholder="Enter Last Name" name="lastname" th:field="*{lastname}"/></td>
         <td th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}">Last Name Error</td>
     </tr>
     <tr>
         <h2>Email:</h2>
-        <td><input type="text" placeholder="Enter Email" th:field=" *{email}"/></td>
+        <td><input type="text" placeholder="Enter Email" name="email" th:field=" *{email}"/></td>
         <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</td>
     </tr>
 
     <tr>
         <h2>Password:</h2>
-        <td><input type="password" placeholder="Enter Password" th:field="*{password}"/></td>
+        <td><input type="password" placeholder="Enter Password" name="password" th:field="*{password}"/></td>
         <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</td>
     </tr>
     <tr>
         <H2>Repeat Password:</H2>
-        <td><input type="text" placeholder="Re-enter Password" th:field="*{repassword}"/></td>
+        <td><input type="text" placeholder="Re-enter Password" name="repassword"  th:field="*{repassword}"/></td>
         <td th:if="${#fields.hasErrors('repassword')}" th:errors="*{repassword}">RepeatPassword Error</td>
     </tr>
     <tr>

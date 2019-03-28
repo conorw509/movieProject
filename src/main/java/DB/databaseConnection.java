@@ -23,7 +23,7 @@ public class databaseConnection {
         //loading driver
         try {
             Class.forName("org.apache.derby.jdbc.ClientDriver");
-        } catch(Exception e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
 

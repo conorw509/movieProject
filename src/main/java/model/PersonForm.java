@@ -15,9 +15,9 @@ public class PersonForm {
     private String email;
     @NotEmpty(message = "Password cannot Be empty")
     @Size(min = 8, max = 15, message = "Password must be between 8 and 15 characters")
-    @Pattern(regexp = "(.*[A-Z].*)",message = "Password must contain at Least 1 uppercase Letter")
-    @Pattern(regexp = "(.*[a-z].*)",message = "Password must contain at Least 1 lowercase Letter")
-    @Pattern(regexp = "(.*[0-9].*)",message = "Password must contain at Least 1 number")
+    @Pattern(regexp = "(.*[A-Z].*)", message = "Password must contain at Least 1 uppercase Letter")
+    @Pattern(regexp = "(.*[a-z].*)", message = "Password must contain at Least 1 lowercase Letter")
+    @Pattern(regexp = "(.*[0-9].*)", message = "Password must contain at Least 1 number")
     private String password;
     @NotEmpty
     private String repassword;
@@ -37,6 +37,7 @@ public class PersonForm {
     public String getName() {
         return name;
     }
+
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
@@ -60,6 +61,7 @@ public class PersonForm {
     public String getPassword() {
         return password;
     }
+
     public void setRepassword(String repassword) {
         this.repassword = repassword;
     }

@@ -5,7 +5,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- *
  * @author conor
  */
 public class PasswordEncrypt {
@@ -34,7 +33,7 @@ public class PasswordEncrypt {
                 digest[i] = (byte) (digest[i] ^ hash1[i]);
             }
 
-            result = String.format("%0" + (digest.length << 1) + "x",new BigInteger(1,digest));
+            result = String.format("%0" + (digest.length << 1) + "x", new BigInteger(1, digest));
 
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
